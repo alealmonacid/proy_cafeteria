@@ -1,0 +1,68 @@
+.main-caja {
+
+	&__izquierda {
+		display: flex;
+		align-items: center;
+		padding-right: 6rem;
+
+		@media (max-width: 767.98px) {
+			padding-top: 1rem;
+			padding-bottom: 1rem;	
+		}
+	}
+
+	&__titulo {
+		font-size: $x-large;
+	}
+
+	&__centrado,&__contenido-derecha {
+		padding: 0;
+	}
+
+	&__centrado {
+		width: 100%;
+		min-height: 350px;
+		position: relative;
+
+		@media (max-width: 575.98px) {
+			min-height: 100%;
+		}
+	}
+
+	&__caja-azul {
+		width: 100%;
+		min-height: 300px;
+		background-color: $blue-de-france;
+	}
+
+	&__mapa {
+		position: absolute;
+		top: 60px;
+		left: -110px;
+		z-index: 1;
+	}
+
+	&__cafe {
+		position: absolute;
+		top: 0;
+		right: -40px;
+		object-fit: cover;
+		width: 23%;
+		height: 55%;
+		z-index: 2;
+
+		@media (max-width: 991.98px) {
+			right: 0;
+		}
+	}
+
+	&__imagen-lado {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	&_parrafo{
+		font-family: $roboto;
+		font-size: $large;
+	}
+}

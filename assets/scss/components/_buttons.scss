@@ -1,0 +1,33 @@
+.button--primary, .button--secondary {
+    border-radius: 0%;
+    
+}
+.button--primary{
+
+    background-color: $white;
+    border:1;
+    color: $quick-silver;
+    border-color: $quick-silver;
+
+    &:hover{
+        background-color: $white;
+        color: $outer-space;
+    }
+
+}
+
+.button--secondary{
+
+    background-color: $shiny-shamrock;
+    border:1;
+    color: $white;
+
+
+    &:hover{
+        background-color: $turquoise-green;
+        color: $outer-space;
+        border-color: $turquoise-green;
+    }
+
+
+}
